@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Modern Photo Gallery</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-6">
+      <nav class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-gray-800">Photo Gallery</h1>
+        <div class="space-x-4">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800"
+          >Home</a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800"
+          >Gallery</a>
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-800"
+          >About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="mb-12">
+      <div class="relative">
+        <img
+          src="https://picsum.photos/800/400"
+          alt="Hero Image"
+          class="w-full h-64 object-cover rounded-lg shadow-lg"
+        >
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+          <h2 class="text-4xl font-bold text-white text-center">Welcome to Our Gallery</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="mb-12">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-6">Featured Photos</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Gallery Items -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-105">
+          <img
+            src="https://picsum.photos/400/300"
+            alt="Gallery Image 1"
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-gray-800">Nature's Beauty</h4>
+            <p class="text-gray-600 mt-2">Captured in the wild</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-105">
+          <img
+            src="https://picsum.photos/400/400"
+            alt="Gallery Image 2"
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-gray-800">Urban Life</h4>
+            <p class="text-gray-600 mt-2">City vibes</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden transition transform hover:scale-105">
+          <img
+            src="https://picsum.photos/400/300"
+            alt="Gallery Image 3"
+            class="w-full h-48 object-cover"
+          >
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-gray-800">Abstract Art</h4>
+            <p class="text-gray-600 mt-2">Modern perspective</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold mb-4">About Us</h4>
+          <p class="text-gray-400">Showcasing the beauty of photography through our curated collection of stunning
+            images.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a
+                href="#"
+                class="text-gray-400 hover:text-white"
+              >Home</a></li>
+            <li><a
+                href="#"
+                class="text-gray-400 hover:text-white"
+              >Gallery</a></li>
+            <li><a
+                href="#"
+                class="text-gray-400 hover:text-white"
+              >About</a></li>
+            <li><a
+                href="#"
+                class="text-gray-400 hover:text-white"
+              >Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li>Email: info@gallery.com</li>
+            <li>Phone: (555) 123-4567</li>
+            <li>Address: 123 Gallery St, Art City</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Photo Gallery. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
