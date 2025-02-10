@@ -1,5 +1,7 @@
 # MCP Image Placeholder Server
 
+[![smithery badge](https://smithery.ai/badge/@husniadil/mcp-image-placeholder)](https://smithery.ai/server/@husniadil/mcp-image-placeholder)
+
 This is a Model Context Protocol (MCP) server that provides a tool for generating placeholder images from different providers.
 
 ## Features
@@ -17,6 +19,14 @@ This is a Model Context Protocol (MCP) server that provides a tool for generatin
 - `uv` package manager
 
 ## Installation
+
+### Installing via Smithery
+
+To install Image Placeholder Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@husniadil/mcp-image-placeholder):
+
+```bash
+npx -y @smithery/cli install @husniadil/mcp-image-placeholder --client claude
+```
 
 1. Clone this repository
 2. [Set up the configuration for MCP server](#configuration)
