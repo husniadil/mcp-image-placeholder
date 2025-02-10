@@ -3,10 +3,20 @@
 startCommand:
   type: stdio
   configSchema:
-    # JSON Schema defining the configuration options for the MCP.
     type: object
-    properties: {}
+    properties:
+      provider:
+        type: string
+        enum:
+          - placehold
+          - lorem-picsum
+      width:
+        type: integer
+        minimum: 1
+        maximum: 10000
+      height:
+        type: integer
+        minimum: 1
+        maximum: 10000
   commandFunction:
-    # A function that produces the CLI command to start the MCP on stdio.
-    |-
     () => ({ command: 'uv', args: ['--directory', '/app', 'run', 'main.py'] })
