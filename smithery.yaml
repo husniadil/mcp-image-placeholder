@@ -1,0 +1,22 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      provider:
+        type: string
+        enum:
+          - placehold
+          - lorem-picsum
+      width:
+        type: integer
+        minimum: 1
+        maximum: 10000
+      height:
+        type: integer
+        minimum: 1
+        maximum: 10000
+  commandFunction:
+    () => ({ command: 'uv', args: ['--directory', '/app', 'run', 'main.py'] })
