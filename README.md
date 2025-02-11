@@ -2,6 +2,8 @@
 
 This is a Model Context Protocol (MCP) server that provides a tool for generating placeholder images from different providers.
 
+<a href="https://glama.ai/mcp/servers/pye2qsv1wz"><img width="380" height="200" src="https://glama.ai/mcp/servers/pye2qsv1wz/badge" alt="Image Placeholder Server MCP server" /></a>
+
 ## Features
 
 - Generates placeholder images from supported providers
